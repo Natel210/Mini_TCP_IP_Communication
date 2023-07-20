@@ -1,0 +1,12 @@
+D:\개인\CodeRepo\Local\NewProject1\NewProject1\SharedLibrary\obj\Debug\net7.0\SharedLibrary.csproj.AssemblyReference.cache
+D:\개인\CodeRepo\Local\NewProject1\NewProject1\SharedLibrary\obj\Debug\net7.0\SharedLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\개인\CodeRepo\Local\NewProject1\NewProject1\SharedLibrary\obj\Debug\net7.0\SharedLibrary.AssemblyInfoInputs.cache
+D:\개인\CodeRepo\Local\NewProject1\NewProject1\SharedLibrary\obj\Debug\net7.0\SharedLibrary.AssemblyInfo.cs
+D:\개인\CodeRepo\Local\NewProject1\NewProject1\SharedLibrary\obj\Debug\net7.0\SharedLibrary.csproj.CoreCompileInputs.cache
+D:\개인\CodeRepo\Local\NewProject1\NewProject1\Bin\Debug\net7.0\SharedLibrary.deps.json
+D:\개인\CodeRepo\Local\NewProject1\NewProject1\Bin\Debug\net7.0\SharedLibrary.dll
+D:\개인\CodeRepo\Local\NewProject1\NewProject1\Bin\Debug\net7.0\SharedLibrary.pdb
+D:\개인\CodeRepo\Local\NewProject1\NewProject1\SharedLibrary\obj\Debug\net7.0\SharedLibrary.dll
+D:\개인\CodeRepo\Local\NewProject1\NewProject1\SharedLibrary\obj\Debug\net7.0\refint\SharedLibrary.dll
+D:\개인\CodeRepo\Local\NewProject1\NewProject1\SharedLibrary\obj\Debug\net7.0\SharedLibrary.pdb
+D:\개인\CodeRepo\Local\NewProject1\NewProject1\SharedLibrary\obj\Debug\net7.0\ref\SharedLibrary.dll
