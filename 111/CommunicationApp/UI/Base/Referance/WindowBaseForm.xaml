@@ -1,0 +1,40 @@
+﻿<Window x:Class="CommunicationApp.UI.Base.Referance.WindowBaseForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CommunicationApp.UI.Base.Referance"
+        mc:Ignorable="d"
+        >
+    <!--Use Binding WindowInfomation-->
+    <Window.Title>
+        <Binding Path="WindowInfo.Title" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged" FallbackValue="WindowBaseForm"/>
+    </Window.Title>
+    <Window.Width>
+        <Binding Path="WindowInfo.Width" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged" FallbackValue="1280"/>
+    </Window.Width>
+    <Window.Height>
+        <Binding Path="WindowInfo.Height" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged" FallbackValue="720"/>
+    </Window.Height>
+    <Window.FontSize>
+        <Binding Path="WindowInfo.DefaultFontSize" Mode="OneWay" FallbackValue="28"/>
+    </Window.FontSize>
+    <Window.WindowStyle>
+        None
+    </Window.WindowStyle>
+    <Window.MinWidth>
+        <Binding Path="WindowInfo.MinWidth" Mode="OneWay" FallbackValue="1280"/>
+    </Window.MinWidth>
+    <Window.MaxWidth>
+        <Binding Path="WindowInfo.MaxWidth" Mode="OneWay" FallbackValue="1280"/>
+    </Window.MaxWidth>
+    <Window.MinHeight>
+        <Binding Path="WindowInfo.MinHeight" Mode="OneWay" FallbackValue="720"/>
+    </Window.MinHeight>
+    <Window.MaxHeight>
+        <Binding Path="WindowInfo.MaxHeight" Mode="OneWay" FallbackValue="720"/>
+    </Window.MaxHeight>
+    <Grid>
+        
+    </Grid>
+</Window>

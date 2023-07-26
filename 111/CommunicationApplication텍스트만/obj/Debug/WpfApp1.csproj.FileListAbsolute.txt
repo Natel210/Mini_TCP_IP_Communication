@@ -1,0 +1,16 @@
+D:\개인\CodeRepo\Local\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe.config
+D:\개인\CodeRepo\Local\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe
+D:\개인\CodeRepo\Local\WpfApp1\WpfApp1\bin\Debug\WpfApp1.pdb
+D:\개인\CodeRepo\Local\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.AssemblyReference.cache
+D:\개인\CodeRepo\Local\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.SuggestedBindingRedirects.cache
+D:\개인\CodeRepo\Local\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+D:\개인\CodeRepo\Local\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+D:\개인\CodeRepo\Local\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
+D:\개인\CodeRepo\Local\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+D:\개인\CodeRepo\Local\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+D:\개인\CodeRepo\Local\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+D:\개인\CodeRepo\Local\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+D:\개인\CodeRepo\Local\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+D:\개인\CodeRepo\Local\WpfApp1\WpfApp1\obj\Debug\UI\UIMain\MainWindow.g.cs
+D:\개인\CodeRepo\Local\WpfApp1\WpfApp1\obj\Debug\UI\UIMain\App.g.cs
+D:\개인\CodeRepo\Local\WpfApp1\WpfApp1\obj\Debug\UI\UIMain\MainWindow.baml

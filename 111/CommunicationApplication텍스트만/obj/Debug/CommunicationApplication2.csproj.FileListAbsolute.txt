@@ -1,0 +1,16 @@
+D:\개인\CodeRepo\Local\CommunicationApplication\CommunicationApplication\bin\Debug\CommunicationApplication.exe.config
+D:\개인\CodeRepo\Local\CommunicationApplication\CommunicationApplication\bin\Debug\CommunicationApplication.exe
+D:\개인\CodeRepo\Local\CommunicationApplication\CommunicationApplication\bin\Debug\CommunicationApplication.pdb
+D:\개인\CodeRepo\Local\CommunicationApplication\CommunicationApplication\obj\Debug\CommunicationApplication2.csproj.AssemblyReference.cache
+D:\개인\CodeRepo\Local\CommunicationApplication\CommunicationApplication\obj\Debug\CommunicationApplication2.csproj.SuggestedBindingRedirects.cache
+D:\개인\CodeRepo\Local\CommunicationApplication\CommunicationApplication\obj\Debug\UI\MainWindow\MainWondow_View.g.cs
+D:\개인\CodeRepo\Local\CommunicationApplication\CommunicationApplication\obj\Debug\App.g.cs
+D:\개인\CodeRepo\Local\CommunicationApplication\CommunicationApplication\obj\Debug\CommunicationApplication_MarkupCompile.cache
+D:\개인\CodeRepo\Local\CommunicationApplication\CommunicationApplication\obj\Debug\CommunicationApplication_MarkupCompile.lref
+D:\개인\CodeRepo\Local\CommunicationApplication\CommunicationApplication\obj\Debug\UI\MainWindow\MainWondow_View.baml
+D:\개인\CodeRepo\Local\CommunicationApplication\CommunicationApplication\obj\Debug\CommunicationApplication.g.resources
+D:\개인\CodeRepo\Local\CommunicationApplication\CommunicationApplication\obj\Debug\CommunicationApplication.Properties.Resources.resources
+D:\개인\CodeRepo\Local\CommunicationApplication\CommunicationApplication\obj\Debug\CommunicationApplication2.csproj.GenerateResource.cache
+D:\개인\CodeRepo\Local\CommunicationApplication\CommunicationApplication\obj\Debug\CommunicationApplication2.csproj.CoreCompileInputs.cache
+D:\개인\CodeRepo\Local\CommunicationApplication\CommunicationApplication\obj\Debug\CommunicationApplication.exe
+D:\개인\CodeRepo\Local\CommunicationApplication\CommunicationApplication\obj\Debug\CommunicationApplication.pdb
