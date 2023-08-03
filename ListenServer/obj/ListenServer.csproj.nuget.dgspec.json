@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\개인\\CodeRepo\\GitHub\\TCP_IP_Server_cs\\ListenServer\\ListenServer.csproj": {}
+    "E:\\개인\\소스코드\\MyProject\\Git\\TCP_IP_Server_cs\\ListenServer\\ListenServer.csproj": {}
   },
   "projects": {
-    "D:\\개인\\CodeRepo\\GitHub\\TCP_IP_Server_cs\\ListenServer\\ListenServer.csproj": {
+    "E:\\개인\\소스코드\\MyProject\\Git\\TCP_IP_Server_cs\\ListenServer\\ListenServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\개인\\CodeRepo\\GitHub\\TCP_IP_Server_cs\\ListenServer\\ListenServer.csproj",
+        "projectUniqueName": "E:\\개인\\소스코드\\MyProject\\Git\\TCP_IP_Server_cs\\ListenServer\\ListenServer.csproj",
         "projectName": "ListenServer",
-        "projectPath": "D:\\개인\\CodeRepo\\GitHub\\TCP_IP_Server_cs\\ListenServer\\ListenServer.csproj",
+        "projectPath": "E:\\개인\\소스코드\\MyProject\\Git\\TCP_IP_Server_cs\\ListenServer\\ListenServer.csproj",
         "packagesPath": "C:\\Users\\UBISAM\\.nuget\\packages\\",
-        "outputPath": "D:\\개인\\CodeRepo\\GitHub\\TCP_IP_Server_cs\\ListenServer\\obj\\",
+        "outputPath": "E:\\개인\\소스코드\\MyProject\\Git\\TCP_IP_Server_cs\\ListenServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

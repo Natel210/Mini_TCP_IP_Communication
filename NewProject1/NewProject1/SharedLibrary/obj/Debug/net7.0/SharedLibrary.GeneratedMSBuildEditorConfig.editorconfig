@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SharedLibrary
-build_property.ProjectDir = D:\개인\CodeRepo\Local\NewProject1\NewProject1\SharedLibrary\
+build_property.ProjectDir = E:\개인\소스코드\MyProject\Git\TCP_IP_Server_cs\NewProject1\NewProject1\SharedLibrary\

@@ -1,0 +1,15 @@
+E:\개인\소스코드\MyProject\Git\TCP_IP_Server_cs\Client\obj\Debug\net7.0\Client.csproj.AssemblyReference.cache
+E:\개인\소스코드\MyProject\Git\TCP_IP_Server_cs\Client\obj\Debug\net7.0\Client.GeneratedMSBuildEditorConfig.editorconfig
+E:\개인\소스코드\MyProject\Git\TCP_IP_Server_cs\Client\obj\Debug\net7.0\Client.AssemblyInfoInputs.cache
+E:\개인\소스코드\MyProject\Git\TCP_IP_Server_cs\Client\obj\Debug\net7.0\Client.AssemblyInfo.cs
+E:\개인\소스코드\MyProject\Git\TCP_IP_Server_cs\Client\obj\Debug\net7.0\Client.csproj.CoreCompileInputs.cache
+E:\개인\소스코드\MyProject\Git\TCP_IP_Server_cs\Client\bin\Debug\net7.0\Client.exe
+E:\개인\소스코드\MyProject\Git\TCP_IP_Server_cs\Client\bin\Debug\net7.0\Client.deps.json
+E:\개인\소스코드\MyProject\Git\TCP_IP_Server_cs\Client\bin\Debug\net7.0\Client.runtimeconfig.json
+E:\개인\소스코드\MyProject\Git\TCP_IP_Server_cs\Client\bin\Debug\net7.0\Client.dll
+E:\개인\소스코드\MyProject\Git\TCP_IP_Server_cs\Client\bin\Debug\net7.0\Client.pdb
+E:\개인\소스코드\MyProject\Git\TCP_IP_Server_cs\Client\obj\Debug\net7.0\Client.dll
+E:\개인\소스코드\MyProject\Git\TCP_IP_Server_cs\Client\obj\Debug\net7.0\refint\Client.dll
+E:\개인\소스코드\MyProject\Git\TCP_IP_Server_cs\Client\obj\Debug\net7.0\Client.pdb
+E:\개인\소스코드\MyProject\Git\TCP_IP_Server_cs\Client\obj\Debug\net7.0\Client.genruntimeconfig.cache
+E:\개인\소스코드\MyProject\Git\TCP_IP_Server_cs\Client\obj\Debug\net7.0\ref\Client.dll
