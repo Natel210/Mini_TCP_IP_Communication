@@ -20,6 +20,8 @@ namespace Client
 
                 NetworkStream stream = client.GetStream();
 
+                _ = ReceiveMessageAsync(stream); // 비동기로 서버로부터 메시지 수신
+
                 while (true)
                 {
                     Console.Write("메시지를 입력하세요 (종료: 'exit'): ");
@@ -39,5 +41,27 @@ namespace Client
                 Console.WriteLine("오류 발생: " + ex.Message);
             }
         }
+        static async Task ReceiveMessageAsync(NetworkStream stream)
+        {
+            byte[] buffer = new byte[1024];
+
+            while (true)
+            {
+                try
+                {
+                    int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length); // 비동기로 데이터 수신
+                    if (bytesRead == 0)
+                        break;
+
+                    string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
+                    Console.WriteLine("서버로부터 메시지 수신: " + message);
+                }
+                catch
+                {
+                    break;
+                }
+            }
+        }
     }
+
 }

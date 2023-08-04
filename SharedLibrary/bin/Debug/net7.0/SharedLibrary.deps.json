@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "Client/1.0.0": {
+      "SharedLibrary/1.0.0": {
         "runtime": {
-          "Client.dll": {}
+          "SharedLibrary.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Client/1.0.0": {
+    "SharedLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
