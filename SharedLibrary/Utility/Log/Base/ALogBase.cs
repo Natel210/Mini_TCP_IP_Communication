@@ -1,15 +1,21 @@
 ﻿using SharedLibrary.Object;
 using SharedLibrary.Object.Base;
-using SharedLibrary.Object.Log;
+using SharedLibrary.Object.Enum;
+using SharedLibrary.Utility.Log.Enum;
+using SharedLibrary.Utility.Log.Form;
 using System.Runtime.Serialization;
 using System.Xml.Linq;
 
 namespace SharedLibrary.Utility.Log.Base
 {
-    internal abstract partial class ALogBase : ILogItem, IObjBase
+    internal abstract partial class ALogBase : ILogItemForm, IObjBase
+    {
+        protected List<string> _listString = new List<string>();
+        public abstract void AddString(string str);
+    }
+    internal abstract partial class ALogBase /*ILogItemForm*/
     {
         public ELogType Type { get; protected set; }
-        
         private bool _autoExec = false;
         public bool AutoExec
         {
@@ -19,22 +25,10 @@ namespace SharedLibrary.Utility.Log.Base
                 _autoExec = value;
                 if (value)
                     Exec();
-            } 
+            }
         }
         public bool UseDate { get; set; }
         public bool UseTime { get; set; }
-        
-
-        protected List<string> _listString = new List<string>();
-
-        public string[] GetStringArry()
-        {
-            string[] resultArry = new string[0];
-            lock (_listString)
-                resultArry = _listString.ToArray();
-            return resultArry;
-        }
-
         /// <summary>
         /// 
         /// </summary>
@@ -52,20 +46,30 @@ namespace SharedLibrary.Utility.Log.Base
             tempString += str;
             AddString(tempString);
         }
-
+        public string[] GetStringArry()
+        {
+            string[] resultArry = new string[0];
+            lock (_listString)
+                resultArry = _listString.ToArray();
+            return resultArry;
+        }
         public void ClearString()
         {
             _listString.Clear();
         }
-
-        public abstract void AddString(string str);
-
         public abstract void Exec();
-
+    }
+    internal abstract partial class ALogBase /*IObjBase*/
+    {
+        public string Name { get; } = nameof(ALogBase);
+        public abstract string ClassName { get; }
+        public string ClassCategory { get; } = ELibraryObjectType.Log.ToString();
+    }
+    internal abstract partial class ALogBase /*abstract*/
+    {
         private ALogBase()
         {
             Type = ELogType.None;
-            Name = "";
         }
 
         protected ALogBase(ELogType type, string name)
@@ -74,13 +78,4 @@ namespace SharedLibrary.Utility.Log.Base
             Name = name;
         }
     }
-
-
-    internal abstract partial class ALogBase
-    {
-        public string Name { get; protected set; } = nameof(ALogBase);
-        public override string ClassName { get; protected set; } = nameof(ObjectManager);
-    }
-
-
 }

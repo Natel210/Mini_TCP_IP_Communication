@@ -1,10 +1,13 @@
-﻿using SharedLibrary.Object.Log;
-using SharedLibrary.Utility.Log.Base;
+﻿using SharedLibrary.Utility.Log.Base;
+using SharedLibrary.Utility.Log.Enum;
 using System.Diagnostics;
 
 namespace SharedLibrary.Utility.Log.Item
 {
-    internal class LogOutDebug : ALogBase
+    internal partial class LogOutDebug : ALogBase
+    {
+    }
+    internal partial class LogOutDebug /*ALogBase*/
     {
         public override void AddString(string str)
         {
@@ -13,7 +16,10 @@ namespace SharedLibrary.Utility.Log.Item
             if (AutoExec)
                 Exec();
         }
-
+        internal LogOutDebug(string logName) : base(ELogType.Debug, logName) {}
+    }
+    internal partial class LogOutDebug /*ALogBase -> ILogItemForm*/
+    {
         public override void Exec()
         {
             string[] tempArryString;
@@ -26,10 +32,9 @@ namespace SharedLibrary.Utility.Log.Item
             lock (_listString)
                 _listString.Clear();
         }
-
-        internal LogOutDebug(string logName) : base(ELogType.Debug, logName)
-        {
-
-        }
+    }
+    internal partial class LogOutDebug /*ALogBase -> IObjBase*/
+    {
+        public override string ClassName { get; } = nameof(LogOutDebug);
     }
 }

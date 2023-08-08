@@ -13,6 +13,7 @@ namespace SharedLibrary.DesignPattern
     {
         public abstract string Name { get; }
         public abstract string ClassName { get; }
+        public abstract string ClassCategory { get; }
         public static T Instance { get; } = new T();
     }
 }

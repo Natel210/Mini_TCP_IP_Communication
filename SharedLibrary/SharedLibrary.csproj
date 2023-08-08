@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="TCP_IP\Client\" />
+    <Folder Include="Utility\File\Base\" />
+    <Folder Include="Utility\File\INI\" />
   </ItemGroup>
 
 </Project>

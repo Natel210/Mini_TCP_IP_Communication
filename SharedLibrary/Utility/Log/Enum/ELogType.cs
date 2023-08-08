@@ -1,4 +1,4 @@
-﻿namespace SharedLibrary.Object.Log
+﻿namespace SharedLibrary.Utility.Log.Enum
 {
     public enum ELogType
     {

@@ -10,5 +10,6 @@ namespace SharedLibrary.Object.Base
     {
         string Name { get; }
         string ClassName { get; }
+        string ClassCategory { get; }
     }
 }

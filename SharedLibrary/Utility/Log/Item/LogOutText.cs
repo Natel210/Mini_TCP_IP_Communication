@@ -1,17 +1,49 @@
-﻿using SharedLibrary.Object.Base;
-using SharedLibrary.Object.Log;
-using SharedLibrary.Utility.Log.Base;
+﻿using SharedLibrary.Utility.Log.Base;
+using SharedLibrary.Utility.Log.Enum;
+using SharedLibrary.Utility.Log.Item;
+using SharedLibrary.Utility.Path;
 using System.IO;
-using System.Runtime.Serialization;
 
-namespace SharedLibrary.Utillity.Log.Item
+namespace SharedLibrary.Utility.Log.Item
 {
-    internal partial class LogOutText_intervalDate : ALogBase
+    internal partial class LogOutText : ALogBase, UserPath
     {
-        private string _rootPath;
+        //private string _rootPath;
+        private UserPath _userPath;
         private readonly object _fileLock = new object();
         private readonly Mutex _fileMutex = new Mutex();
+        //private string makeFileName()
+        //{
+        //    return Name + ".log";
+        //}
 
+    }
+    internal partial class LogOutText /*IPathBase*/
+    {
+        public string Directory { get; set; }
+        public string FileName { get; set; }
+        public string Extension { get; set; }
+
+        public FileAttributes FileAttributes { get; set; }
+
+        public bool CheckDirectory()
+        {
+
+        }
+        public bool CheckFile()
+        {
+
+        }
+        public bool CreateDirectory()
+        { 
+        }
+        public bool CreateFile()
+        {
+
+        }
+    }
+    internal partial class LogOutText /*ALogBase*/
+    {
         public override void AddString(string str)
         {
             lock (_listString)
@@ -20,16 +52,22 @@ namespace SharedLibrary.Utillity.Log.Item
             if (AutoExec)
                 Exec();
         }
-
-        private string makeFileName()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="logName"></param>
+        /// <param name="path">위치경로</param>
+        internal LogOutText(string logName, string rootPath) : base(ELogType.Text, logName)
         {
-            return Name + "_" + DateTime.Today.ToString("yyyyMMdd") + ".log";
+            _userPath = new UserPath(logName);
+            _userPath.FillPath(rootPath, logName, "log");
         }
-
+    }
+    internal partial class LogOutText /*ALogBase -> ILogItemForm*/
+    {
         public override void Exec()
         {
             var fullPath = _rootPath + @"\" + makeFileName();
-
             // empty path/dir return.
             if (string.IsNullOrEmpty(_rootPath))
                 return;
@@ -48,8 +86,8 @@ namespace SharedLibrary.Utillity.Log.Item
             if (!Directory.Exists(directory))
                 Directory.CreateDirectory(directory);
 
-            if (!System.IO.File.Exists(fullPath))
-                System.IO.File.WriteAllText(fullPath, string.Empty);
+            if (!File.Exists(fullPath))
+                File.WriteAllText(fullPath, string.Empty);
 
             bool fileOpened = false;
             try
@@ -64,7 +102,7 @@ namespace SharedLibrary.Utillity.Log.Item
 
                 lock (_fileLock)
                 {
-                    if (System.IO.File.Exists(fullPath))
+                    if (File.Exists(fullPath))
                     {
                         using (var writer = new StreamWriter(fullPath, true))
                         {
@@ -84,19 +122,9 @@ namespace SharedLibrary.Utillity.Log.Item
             lock (_listString)
                 _listString.Clear();
         }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="logName"></param>
-        /// <param name="path">위치경로</param>
-        internal LogOutText_intervalDate(string logName, string rootPath) : base(ELogType.Text_intervalDate, logName)
-        {
-            _rootPath = rootPath;
-        }
     }
-
-    internal partial class LogOutText_intervalDate
+    internal partial class LogOutText /*ALogBase -> IObjBase*/
     {
+        public override string ClassName { get; } = nameof(LogOutText);
     }
 }

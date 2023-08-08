@@ -1,5 +1,5 @@
-﻿using SharedLibrary.Object.Log;
-using SharedLibrary.TCP_IP.Server;
+﻿using SharedLibrary.TCP_IP.Server;
+using SharedLibrary.Utility.Log.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Server.TCP_IP
 {
-    internal class MainServer : ATCP_Server_Base
+    internal class MainServer : ATCP_ServerBase
     {
         internal MainServer(string name = "MainServer", int port = 20000) : base(name, port)
         {

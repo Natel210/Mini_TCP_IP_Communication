@@ -1,19 +1,13 @@
-﻿using SharedLibrary.Object.Base;
-using SharedLibrary.Object.File;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using SharedLibrary.Utility.Path;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace SharedLibrary.Utillity.File.INI
+namespace SharedLibrary.Utility.File.INI
 {
-    public class File_INI : IObjBase
+    public partial class File_INI : UserPath
     {
-        public string Name { get; private set; } = string.Empty;
-        public string Path { get; set; } = string.Empty;
+        
+        //public string Path { get; set; } = string.Empty;
 
         // Marshalling.
         [DllImport("kernel32")]
@@ -25,31 +19,22 @@ namespace SharedLibrary.Utillity.File.INI
         private File_INI()
         {
         }
-
-        public File_INI(string name, string path)
+        public File_INI(string name) : base(name)
         {
-            Name = name;
-            Path = path;
+        }
+        public File_INI(string name, string fullPath) : base(name,fullPath)
+        {
+        }
+        public File_INI(string name, string directory, string filename, string extension) : base(name, directory, filename, extension)
+        {
         }
 
-        public bool CheckFile()
+        public override bool CreateFile()
         {
-            if (0 < Path.Length)
-                return System.IO.File.Exists(Path);
-            return false;
-        }
-
-        public void CreateFile()
-        {
-            var info = new FileInfo(Path);
-            info.Create().Close();
-            //info.Attributes = FileAttributes.ReadOnly;
-            info.Attributes |= FileAttributes.Hidden;
-        }
-
-        public void DeleteFile()
-        {
-            new FileInfo(Path).Delete();
+            bool result = base.CreateFile();
+            if (result is true)
+                FileAttributes |= FileAttributes.Hidden;
+            return result;
         }
 
         public void DeleteValue(string Section, string Key)
@@ -79,5 +64,10 @@ namespace SharedLibrary.Utillity.File.INI
                 return temp.ToString();
             return null;
         }
+    }
+
+    public partial class File_INI /*IObjBase*/
+    {
+        public override string ClassName { get; } = nameof(File_INI);
     }
 }

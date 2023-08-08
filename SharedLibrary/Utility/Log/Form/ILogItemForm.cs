@@ -1,13 +1,15 @@
 ﻿using Microsoft.VisualBasic;
 using SharedLibrary.Object.Base;
-namespace SharedLibrary.Object.Log
+using SharedLibrary.Utility.Log.Enum;
+
+namespace SharedLibrary.Utility.Log.Form
 {
-    public interface ILogItem
+    public interface ILogItemForm
     {
         ELogType Type { get; }
-        
+
         bool AutoExec { get; set; }
-        
+
         bool UseDate { get; set; }
         bool UseTime { get; set; }
 
